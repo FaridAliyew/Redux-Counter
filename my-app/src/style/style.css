@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f7f7;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #c2e9fb, #64b5f6);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    animation: bounce 3s infinite;
+    letter-spacing: 1px;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  button {
+    background: #ffffff;
+    color: #333;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.4s, transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    /* outline: none; */
+  }
+  
+  button:hover {
+    background: #ff6f61;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:active {
+    background: #e64a19;
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 600px) {
+    .App {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px 20px;
+      font-size: 1rem;
+    }
+  }
+  
